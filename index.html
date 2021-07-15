@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo.png">
+</head>
+
+<body>
+    <header>
+        <h1>Bookshelf Apps</h1>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="form-content">
+                <section class="input_section">
+                    <h2>Add New Book</h2>
+                    <form id="inputBook">
+                        <div class="input">
+                            <label for="inputBookTitle">Title</label>
+                            <input id="inputBookTitle" type="text" placeholder="Enter book title ..." required>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookAuthor">Author</label>
+                            <input id="inputBookAuthor" type="text" placeholder="Enter book author ..." required>
+                        </div>
+                        <div class="input">
+                            <label for="inputBookYear">Year</label>
+                            <input id="inputBookYear" type="number" placeholder="Enter book year ..." required>
+                        </div>
+                        <div class="input_inline">
+                            <label for="inputBookIsComplete">Finished reading</label>
+                            <input id="inputBookIsComplete" type="checkbox">
+                        </div>
+                        <button id="bookSubmit" type="submit">Add Book</button>
+                    </form>
+                </section>
+
+                <section class="search_section">
+                    <h2>Search Book</h2>
+                    <form id="searchBook">
+                        <label for="searchBookTitle">Title</label>
+                        <input id="searchBookTitle" placeholder="Enter keywords ..." type="text">
+                        <br>
+                        <button id="searchSubmit" type="submit">Search</button>
+                    </form>
+                </section>
+            </div>
+
+            <div class="book-content">
+                <section class="book_shelf">
+                    <h2>Unfinished book</h2>
+
+                    <div id="incompleteBookshelfList" class="book_list">
+                    </div>
+                </section>
+
+                <section class="book_shelf">
+                    <h2>Finished book</h2>
+
+                    <div id="completeBookshelfList" class="book_list">
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright &#169; 2020, Yeremi Andrew</p>
+    </footer>
+
+    <script src="assets/js/books-storage.js"></script>
+    <script src="assets/js/books-dom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
